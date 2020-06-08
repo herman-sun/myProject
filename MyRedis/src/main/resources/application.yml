@@ -1,0 +1,44 @@
+
+spring:
+
+  redis :
+
+    host : localhost
+
+    port : 6379
+
+    password : 123456
+
+    database : 0
+
+    pool.max-idle : 8
+
+    pool.min-idle : 1
+
+    pool.max-active : 8
+
+    pool.max-wait : -1
+
+
+
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test1?characterEncoding=UTF-8
+    username: root
+    password: 123456
+
+logging:
+  level:
+    root: error
+    com:
+      woniu:
+        cache26:
+          mapper: debug
+
+
+server:
+  port: 8080
+
+user:
+  mysqldumppath: C:\Program Files\MySQL\MySQL Server 5.5\bin\
